@@ -8,8 +8,8 @@ services:
     env_file:
       - .env
     depends_on:
-      - mongodb
-      - redis
+      - mongodb1
+      - redis1
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8111/health"]
       interval: 1m
